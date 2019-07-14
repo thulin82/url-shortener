@@ -1,0 +1,4 @@
+{
+    "mongoURI": "MONGOURI",
+    "baseUrl" : "http://localhost:5000"
+}
