@@ -1,2 +1,6 @@
-node_modules
-requests
+node_modules/
+requests/
+coverage/
+.nyc_output/
+
+npm-debug.log
