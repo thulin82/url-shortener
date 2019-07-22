@@ -10,7 +10,7 @@ router.post('/shorten', async (req, res) => {
     const {longUrl} = req.body;
     const baseUrl = config.get('baseUrl');
 
-    if(!validUrl.isUri(baseUrl)) {
+    if (!validUrl.isUri(baseUrl)) {
         return res.status(401).json('Invalid base url');
     }
 
