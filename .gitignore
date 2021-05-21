@@ -1,6 +1,4 @@
 node_modules/
 requests/
-coverage/
-.nyc_output/
-
+test-results.json
 npm-debug.log

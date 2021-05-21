@@ -6,7 +6,8 @@
     "scripts": {
         "start": "node index",
         "dev": "nodemon index",
-        "test": "nyc --reporter=clover mocha --recursive tests"
+        "test": "mocha --reporter json > test-results.json --exit --recursive tests",
+        "test_console": "mocha --exit --recursive tests"
     },
     "keywords": [],
     "author": "",
@@ -22,7 +23,6 @@
         "chai": "^4.3.0",
         "eslint": "^7.26.0",
         "mocha": "^8.4.0",
-        "nodemon": "^2.0.0",
-        "nyc": "^15.1.0"
+        "nodemon": "^2.0.0"
     }
 }
