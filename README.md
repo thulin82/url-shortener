@@ -1,6 +1,6 @@
 # [URL shortener](https://github.com/thulin82/url-shortener)
 
-[![GitHub Actions](https://github.com/thulin82/url-shortener/actions/workflows/github-actions.yml/badge.svg)](https://github.com/thulin82/url-shortener/actions/workflows/github-actions.yml)
+[![GitHub Actions](https://github.com/thulin82/url-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/thulin82/url-shortener/actions/workflows/ci.yml)
 
 ## Setup
 
