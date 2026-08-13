@@ -10,6 +10,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:ci": "cross-env CI=true vitest run --coverage",
     "lint": "eslint ."
   },
   "keywords": [],
