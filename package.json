@@ -1,28 +1,36 @@
 {
-    "name": "url-shortener",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index",
-        "dev": "nodemon index",
-        "test": "mocha --reporter json > test-results.json --exit --recursive tests",
-        "test_console": "mocha --exit --recursive tests"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "config": "^3.3.0",
-        "express": "^4.21.0",
-        "mongoose": "^8.9.0",
-        "shortid": "^2.2.0",
-        "valid-url": "^1.0.9"
-    },
-    "devDependencies": {
-        "chai": "^4.3.0",
-        "eslint": "^9.19.0",
-        "mocha": "^10.7.0",
-        "nodemon": "^3.1.0"
-    }
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.0",
+    "mongoose": "^9.9.0",
+    "nanoid": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^26.2.0",
+    "@types/supertest": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "eslint": "^10.8.0",
+    "supertest": "^7.2.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.0",
+    "vitest": "^4.1.0"
+  }
 }
